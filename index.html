@@ -7,6 +7,22 @@
 	<script src="http://mymucool.github.io/jquery.js"></script>
 </head>
 <body>
+	Password: <input type="password" value="nopass" id="myInput" onchange="myFunction()">
+	<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+	var y = document.getElementById("main");
+	
+	if (x.value === "popo") {
+    y.style.visibility='visible';
+  } else {
+    x.disabled = true;
+	
+	  x.type = "text";
+	  x.value ="Wrong password!";
+  }
+}
+</script>
 <div id="main" style="visibility: hidden;">
 	<div><br>
 <script>
@@ -80,7 +96,7 @@
 </script><p>Boss (Mp3Tau.Com) -320KBPS.mp3</p>
 <audio src="http://mymucool.github.io/Boss (Mp3Tau.Com) -320KBPS.mp3" preload="auto"/>
 </div>	
-</div>
+
 </div>
 </body>
 </html>
