@@ -10,14 +10,15 @@
 	Password: <input type="password" value="nopass" id="myInput" onchange="myFunction()">
 	<script>
 function myFunction() {
-  var x = document.getElementById("passbox");
+  var x = document.getElementById("myInput");
 	var y = document.getElementById("main");
+var z = document.getElementById("passbox")
 	
 	if (x.value === "bawa") {
     y.style.visibility='visible';
   } else {
     
-	 x.style.visibility='hidden';
+	 z.style.visibility='hidden';
   }
 }
 </div>
